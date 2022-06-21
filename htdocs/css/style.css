@@ -13,10 +13,13 @@ body {
     text-align: center;
 }
 
+.scrollable {
+    overflow-y: auto;
+}
+
 .table-wrap {
     margin-top: 20px;
     height: 150px;
-    overflow-y: auto;
 }
 
 .data-table {
@@ -25,7 +28,6 @@ body {
 
 .message-area {
     height: 350px;
-    overflow-y: auto;
 }
 
 .message {
