@@ -1,8 +1,13 @@
 $(function () {
-    window.addEventListener('touchmove', function (e) {
-        const scrollable = $(e.target).closest('.scrollable')[0]
-        if (!scrollable) {
-            e.preventDefault()
+    const $scrollable = $('.scrollable')
+
+    $scrollable.each(function () {
+        this.scrollTop = 1
+    })
+    
+    $scrollable.on('scroll', function () {
+        if (this.scrollTop === 0) {
+            this.scrollTop = 1
         }
-    }, { passive: false })
+    })
 })
