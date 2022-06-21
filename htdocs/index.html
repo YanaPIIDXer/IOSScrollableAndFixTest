@@ -9,6 +9,22 @@
     <body>
         <div id="app">
             <h1 class="title">{{ title }}</h1>
+            <button class="add-button" @click="addData">データ追加</button>
+            <div class="table-wrap">
+                <table class="data-table" border="1">
+                    <thead>
+                        <tr>
+                            <th>ID</th><th>Message</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr v-for="item in datas" :key="item.id">
+                            <td>{{ item.id }}</td>
+                            <td>{{ item.msg }}</td>
+                        </tr>
+                    </tbody>
+                </table>    
+            </div>
         </div>
     </body>
 

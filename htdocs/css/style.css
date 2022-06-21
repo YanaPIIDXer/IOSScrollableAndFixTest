@@ -1,3 +1,18 @@
-.title {
+#app {
     text-align: center;
+}
+
+.add-button {
+    width: 200px;
+    height: 100px;
+}
+
+.table-wrap {
+    margin-top: 20px;
+    height: 150px;
+    overflow-y: auto;
+}
+
+.data-table {
+    margin: auto;
 }
