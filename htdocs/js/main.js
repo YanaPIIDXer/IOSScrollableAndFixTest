@@ -1,3 +1,5 @@
 $(function () {
-    $(".title").text("Hello, jQuery")
+    window.addEventListener('touchmove', function (e) {
+        e.preventDefault()
+    }, { passive: false })    
 })
