@@ -2,11 +2,6 @@
     text-align: center;
 }
 
-.add-button {
-    width: 200px;
-    height: 100px;
-}
-
 .table-wrap {
     margin-top: 20px;
     height: 150px;
@@ -15,4 +10,25 @@
 
 .data-table {
     margin: auto;
+}
+
+.message-area {
+    height: 350px;
+    overflow-y: auto;
+}
+
+.message {
+    margin: 10px;
+    padding: 5px;
+    border: 1px solid #000;
+    border-radius: 20px;
+    width: auto;
+}
+
+.message:nth-child(even) {
+    text-align: left;
+}
+
+.message:nth-child(odd) {
+    text-align: right;
 }
